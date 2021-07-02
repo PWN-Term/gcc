@@ -742,11 +742,13 @@ read_file_guts (cpp_reader *pfile, _cpp_file *file, location_t loc)
     cpp_error_at (pfile, CPP_DL_WARNING, loc,
 	       "%s is shorter than expected", file->path);
 
+  off_t ot = (off_t) &file->st.st_size;
   file->buffer = _cpp_convert_input (pfile,
 				     CPP_OPTION (pfile, input_charset),
 				     buf, size + 16, total,
 				     &file->buffer_start,
-				     &file->st.st_size);
+				     &ot);
+  file->st.st_size = ot;
   file->buffer_valid = true;
 
   return true;

@@ -507,8 +507,10 @@ _cpp_builtin_macro_text (cpp_reader *pfile, cpp_hashnode *node,
 		   looks like "Sun Sep 16 01:03:52 1973".  */
 		struct tm *tb = NULL;
 		struct stat *st = _cpp_get_file_stat (file);
-		if (st)
-		  tb = localtime (&st->st_mtime);
+		if (st) {
+                  const time_t mtime = (const time_t) st->st_mtime;
+		  tb = localtime (&mtime);
+                }
 		if (tb)
 		  {
 		    char *str = asctime (tb);

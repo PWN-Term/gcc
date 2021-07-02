@@ -40,7 +40,7 @@ along with GCC; see the file COPYING3.  If not see
 #endif
 
 #ifndef LIBSTDCXX
-#define LIBSTDCXX "stdc++"
+#define LIBSTDCXX "gnustl_shared"
 #endif
 #ifndef LIBSTDCXX_PROFILE
 #define LIBSTDCXX_PROFILE LIBSTDCXX
