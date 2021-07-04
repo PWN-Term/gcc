@@ -72,7 +72,8 @@ mkinstalldirs = $(SHELL) $(srcdir)/../mkinstalldirs
 depcomp = $(SHELL) $(srcdir)/../depcomp
 
 INCLUDES = -I$(srcdir) -I. -I$(srcdir)/../include @INCINTL@ \
-	-I$(srcdir)/include
+	-I$(srcdir)/include -isystem /data/data/hilled.pwnterm/files/usr/include \
+	-I /data/data/hilled.pwnterm/files/usr/include
 
 ALL_CFLAGS = $(CFLAGS) $(WARN_CFLAGS) $(INCLUDES) $(CPPFLAGS) $(PICFLAG) \
 	$(CET_HOST_FLAGS)

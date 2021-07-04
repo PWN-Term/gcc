@@ -2,7 +2,7 @@
 # (Used to build with libllvm/clang in pwn-term)
 set -e
 
-cd out
+cd ../out
 
 # Configure exports
 
