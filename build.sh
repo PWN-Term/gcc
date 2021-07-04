@@ -34,4 +34,3 @@ CPP=${CPP_FOR_TARGET}
 
 # Make gcc
 make all-gcc CFLAGS="-w -fbracket-depth=512 " CXXFLAGS="-w -fbracket-depth=512"
-
