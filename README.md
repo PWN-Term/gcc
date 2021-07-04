@@ -22,3 +22,11 @@
 ```
 ./build.sh
 ```
+* Installing
+
+```
+./build.sh
+```
+
+#### Credits
+* Base-patches: https://github.com/its-pointless
