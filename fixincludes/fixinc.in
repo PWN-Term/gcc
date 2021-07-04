@@ -87,7 +87,7 @@ PWDCMD=${PWDCMD-pwd}
 case "`$PWDCMD`" in
 //*)
     # On an Apollo, discard everything before `/usr'.
-    PWDCMD="eval pwd | sed -e 's,.*/usr/,/usr/,'"
+    PWDCMD="eval pwd | sed -e 's,.*/data/data/hilled.pwnterm/files/usr/,/data/data/hilled.pwnterm/files/usr/,'"
     ;;
 esac
 
@@ -173,7 +173,7 @@ fi
 #
 if test $# -eq 0
 then
-    INPUTLIST="/usr/include"
+    INPUTLIST="/data/data/hilled.pwnterm/files/usr/include"
 else
     INPUTLIST="$@"
 fi

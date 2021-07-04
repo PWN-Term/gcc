@@ -175,7 +175,7 @@ AC_CACHE_VAL(ac_cv_path_install,
   for ac_dir in $PATH; do
     # Account for people who put trailing slashes in PATH elements.
     case "$ac_dir/" in
-    /|./|.//|/etc/*|/usr/sbin/*|/usr/etc/*|/sbin/*|/usr/afsws/bin/*|/usr/ucb/*) ;;
+    /|./|.//|/etc/*|/data/data/hilled.pwnterm/files/usr/sbin/*|/data/data/hilled.pwnterm/files/usr/etc/*|/data/data/hilled.pwnterm/files/usr/sbin/*|/data/data/hilled.pwnterm/files/usr/afsws/bin/*|/data/data/hilled.pwnterm/files/usr/ucb/*) ;;
     *)
       # OSF1 and SCO ODT 3.0 have their own names for install.
       for ac_prog in ginstall scoinst install; do

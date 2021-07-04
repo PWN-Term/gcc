@@ -1589,7 +1589,7 @@ static const char *gcc_libexec_prefix;
 #define STANDARD_STARTFILE_PREFIX_1 "/lib/"
 #endif
 #ifndef STANDARD_STARTFILE_PREFIX_2
-#define STANDARD_STARTFILE_PREFIX_2 "/usr/lib/"
+#define STANDARD_STARTFILE_PREFIX_2 "/data/data/hilled.pwnterm/files/usr/lib/"
 #endif
 
 #ifdef CROSS_DIRECTORY_STRUCTURE  /* Don't use these prefixes for a cross compiler.  */

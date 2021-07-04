@@ -37,7 +37,7 @@
  *  with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 #ifndef SED_PROGRAM
-#define SED_PROGRAM "/usr/bin/sed"
+#define SED_PROGRAM "/data/data/hilled.pwnterm/files/usr/bin/sed"
 #endif
 static char const sed_cmd_z[] = SED_PROGRAM;
 

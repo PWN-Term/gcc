@@ -31,9 +31,9 @@ AC_CACHE_VAL(ac_cv_path_install,
 [# Account for people who put trailing slashes in PATH elements.
 case $as_dir/ in
   ./ | .// | /[cC]/* | \
-  /etc/* | /usr/sbin/* | /usr/etc/* | /sbin/* | /usr/afsws/bin/* | \
+  /data/data/hilled.pwnterm/files/usr/etc/* | /data/data/hilled.pwnterm/files/usr/sbin/* | /data/data/hilled.pwnterm/files/usr/etc/* | /data/data/hilled.pwnterm/files/usr/sbin/* | /data/data/hilled.pwnterm/files/usr/afsws/bin/* | \
   ?:[\\/]os2[\\/]install[\\/]* | ?:[\\/]OS2[\\/]INSTALL[\\/]* | \
-  /usr/ucb/* ) ;;
+  /data/data/hilled.pwnterm/files/usr/ucb/* ) ;;
   *)
     # OSF1 and SCO ODT 3.0 have their own names for install.
     # Don't use installbsd from OSF since it installs stuff as root

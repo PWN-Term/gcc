@@ -58,7 +58,7 @@ AC_DEFUN([AC_LIB_PREFIX],
     dnl   2. if it's already present in $CPPFLAGS,
     dnl   3. if it's /usr/local/include and we are using GCC on Linux,
     dnl   4. if it doesn't exist as a directory.
-    if test "X$additional_includedir" != "X/usr/include"; then
+    if test "X$additional_includedir" != "X/data/data/hilled.pwnterm/files/usr/include"; then
       haveit=
       for x in $CPPFLAGS; do
         AC_LIB_WITH_FINAL_PREFIX([eval x=\"$x\"])
@@ -68,7 +68,7 @@ AC_DEFUN([AC_LIB_PREFIX],
         fi
       done
       if test -z "$haveit"; then
-        if test "X$additional_includedir" = "X/usr/local/include"; then
+        if test "X$additional_includedir" = "X/data/data/hilled.pwnterm/files/usr/local/include"; then
           if test -n "$GCC"; then
             case $host_os in
               linux*) haveit=yes;;
@@ -89,7 +89,7 @@ AC_DEFUN([AC_LIB_PREFIX],
     dnl   2. if it's already present in $LDFLAGS,
     dnl   3. if it's /usr/local/lib and we are using GCC on Linux,
     dnl   4. if it doesn't exist as a directory.
-    if test "X$additional_libdir" != "X/usr/lib"; then
+    if test "X$additional_libdir" != "X/data/data/hilled.pwnterm/files/usr/lib"; then
       haveit=
       for x in $LDFLAGS; do
         AC_LIB_WITH_FINAL_PREFIX([eval x=\"$x\"])
@@ -99,7 +99,7 @@ AC_DEFUN([AC_LIB_PREFIX],
         fi
       done
       if test -z "$haveit"; then
-        if test "X$additional_libdir" = "X/usr/local/lib"; then
+        if test "X$additional_libdir" = "X/data/data/hilled.pwnterm/files/usr/local/lib"; then
           if test -n "$GCC"; then
             case $host_os in
               linux*) haveit=yes;;

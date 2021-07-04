@@ -251,7 +251,7 @@ AC_DEFUN([AC_LIB_LINKFLAGS_BODY],
               dnl Linking with a shared library. We attempt to hardcode its
               dnl directory into the executable's runpath, unless it's the
               dnl standard /usr/lib.
-              if test "$enable_rpath" = no || test "X$found_dir" = "X/usr/lib"; then
+              if test "$enable_rpath" = no || test "X$found_dir" = "X/data/data/hilled.pwnterm/files/usr/lib"; then
                 dnl No hardcoding is needed.
                 LIB[]NAME="${LIB[]NAME}${LIB[]NAME:+ }$found_so"
               else
@@ -350,9 +350,9 @@ AC_DEFUN([AC_LIB_LINKFLAGS_BODY],
               dnl   3. if it's already present in $CPPFLAGS or the already
               dnl      constructed $INCNAME,
               dnl   4. if it doesn't exist as a directory.
-              if test "X$additional_includedir" != "X/usr/include"; then
+              if test "X$additional_includedir" != "X/data/data/hilled.pwnterm/files/usr/include"; then
                 haveit=
-                if test "X$additional_includedir" = "X/usr/local/include"; then
+                if test "X$additional_includedir" = "X/data/data/hilled.pwnterm/files/usr/include"; then
                   if test -n "$GCC"; then
                     case $host_os in
                       linux*) haveit=yes;;

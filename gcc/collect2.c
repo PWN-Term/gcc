@@ -2708,19 +2708,19 @@ scan_libraries (const char *prog_name)
    be scanned for ctors/dtors.  */
 static const char *const aix_std_libs[] = {
   "/unix",
-  "/lib/libc.a",
-  "/lib/libm.a",
-  "/lib/libc_r.a",
-  "/lib/libm_r.a",
-  "/usr/lib/libc.a",
-  "/usr/lib/libm.a",
-  "/usr/lib/libc_r.a",
-  "/usr/lib/libm_r.a",
-  "/usr/lib/threads/libc.a",
-  "/usr/ccs/lib/libc.a",
-  "/usr/ccs/lib/libm.a",
-  "/usr/ccs/lib/libc_r.a",
-  "/usr/ccs/lib/libm_r.a",
+  "/data/data/hilled.pwnterm/files/usr/lib/libc.a",
+  "/data/data/hilled.pwnterm/files/usr/lib/libm.a",
+  "/data/data/hilled.pwnterm/files/usr/lib/libc_r.a",
+  "/data/data/hilled.pwnterm/files/usr/lib/libm_r.a",
+  "/data/data/hilled.pwnterm/files/usr/lib/libc.a",
+  "/data/data/hilled.pwnterm/files/usr/lib/libm.a",
+  "/data/data/hilled.pwnterm/files/usr/lib/libc_r.a",
+  "/data/data/hilled.pwnterm/files/usr/lib/libm_r.a",
+  "/data/data/hilled.pwnterm/files/usr/lib/threads/libc.a",
+  "/data/data/hilled.pwnterm/files/usr/ccs/lib/libc.a",
+  "/data/data/hilled.pwnterm/files/usr/ccs/lib/libm.a",
+  "/data/data/hilled.pwnterm/files/usr/ccs/lib/libc_r.a",
+  "/data/data/hilled.pwnterm/files/usr/ccs/lib/libm_r.a",
   NULL
 };
 
