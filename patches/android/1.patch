@@ -1,0 +1,16 @@
+--- /data/data/hilled.pwnterm/files/usr/include/stdio.h	2021-07-04 18:17:04.910035335 +0300
++++ /data/data/hilled.pwnterm/files/usr/include/stdio.h	2021-07-04 19:25:11.793775798 +0300
+@@ -357,13 +357,11 @@
+ 
+ #if defined(__USE_BSD)
+ 
+-#if __ANDROID_API__ >= 28
+ int fflush_unlocked(FILE* __fp) __INTRODUCED_IN(28);
+ int fgetc_unlocked(FILE* __fp) __INTRODUCED_IN(28);
+ int fputc_unlocked(int __ch, FILE* __fp) __INTRODUCED_IN(28);
+ size_t fread_unlocked(void* __buf, size_t __size, size_t __count, FILE* __fp) __INTRODUCED_IN(28);
+ size_t fwrite_unlocked(const void* __buf, size_t __size, size_t __count, FILE* __fp) __INTRODUCED_IN(28);
+-#endif /* __ANDROID_API__ >= 28 */
+ 
+ #endif
+ 
