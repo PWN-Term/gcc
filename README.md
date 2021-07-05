@@ -4,7 +4,7 @@
 
 #### Patching
 * Some patches are needed to be applied for pwn includes as ndk has its own modifications that gcc cant read/see so it will throw errors
-    * cd into gcc source code and run patches (1.patch until 1)
+    * cd into gcc source code and run patches (1.patch until 2)
 
     ```
     $ patch -d/ -p1 < patches/includes/1.patch
