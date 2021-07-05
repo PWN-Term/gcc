@@ -1072,7 +1072,7 @@ LIBIBERTY = ../libiberty/$(LIBIBERTY_PICDIR)/libiberty.a
 BUILD_LIBIBERTY = $(build_libobjdir)/libiberty/$(LIBIBERTY_PICDIR)/libiberty.a
 else
 LIBIBERTY = ../libiberty/libiberty.a
-BUILD_LIBIBERTY = $(build_libobjdir)/libiberty/libiberty.a
+BUILD_LIBIBERTY = ../libiberty/libiberty.a
 endif
 
 # Dependencies on the intl and portability libraries.
