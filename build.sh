@@ -11,7 +11,7 @@ export CPPFLAGS_FOR_TARGET="-Os -I/data/data/hilled.pwnterm/files/usr/include -I
 export CXXFLAGS_FOR_TARGET="-Os -fbracket-depth=512"
 export LDFLAGS_FOR_TARGET=" -specs=/sdcard/specs -L/data/data/hilled.pwnterm/files/usr/lib -Wl,-rpath-link,/data/data/hilled.pwnterm/files/usr/lib -Wl,-rpath-link,/data/data/hilled.pwnterm/files/usr/lib"
 export PKG_CONFIG_FOR_TARGET="pkg-config"
-
+export ORIGINAL_AS_FOR_TARGET="/data/data/hilled.pwnterm/files/usr/bin/as"
 export CC="gcc"
 export LD_FOR_BUILD="ld"
 export AR_FOR_TARGET="ar"

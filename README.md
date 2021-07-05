@@ -7,7 +7,7 @@
     * cd into gcc source code and run patches (1.patch until 1)
 
     ```
-    $ patch -p1 < patches/includes/1.patch
+    $ patch -d/ -p1 < patches/includes/1.patch
     ```
 
 #### Compiling
