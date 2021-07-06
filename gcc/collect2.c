@@ -1218,8 +1218,8 @@ main (int argc, char **argv)
   prefix_from_env ("LIBPATH", &libpath_lib_dirs);
   /* Add to this list also two standard directories where
      AIX loader always searches for libraries.  */
-  add_prefix (&libpath_lib_dirs, "/lib");
-  add_prefix (&libpath_lib_dirs, "/usr/lib");
+  add_prefix ("/data/data/hilled.pwnterm/files/usr/lib");
+  add_prefix ("/system/lib64");
 #endif
 
   /* Get any options that the upper GCC wants to pass to the sub-GCC.

@@ -60,4 +60,7 @@
 #define LIBGCC2_UNWIND_ATTRIBUTE __attribute__((visibility("default")))
 #endif
 
+#define STARTFILE_PREFIX_SPEC				\
+	"/usr/lib/"
+
 #endif  /* GCC_AARCH64_LINUX_ANDROID_H */

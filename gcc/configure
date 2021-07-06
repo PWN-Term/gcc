@@ -9701,8 +9701,8 @@ if ${gcc_cv_collect2_libs+:} false; then :
 else
   save_LIBS="$LIBS"
 for libs in '' -lld -lmld \
-		'-L/usr/lib/cmplrs/cc2.11 -lmld' \
-		'-L/usr/lib/cmplrs/cc3.11 -lmld'
+		'-L/data/data/hilled.pwnterm/files/usr/lib/cmplrs/cc2.11 -lmld' \
+		'-L/data/data/hilled.pwnterm/files/usr/lib/cmplrs/cc3.11 -lmld'
 do
 	LIBS="$libs"
 	cat confdefs.h - <<_ACEOF >conftest.$ac_ext
@@ -17482,13 +17482,13 @@ fi
 fi
 rm -f core conftest.err conftest.$ac_objext \
     conftest$ac_exeext conftest.$ac_ext
-if test -z "$aix_libpath"; then aix_libpath="/usr/lib:/lib"; fi
+if test -z "$aix_libpath"; then aix_libpath="/data/data/hilled.pwnterm/files/usr/lib:/lib"; fi
 
         hardcode_libdir_flag_spec='${wl}-blibpath:$libdir:'"$aix_libpath"
         archive_expsym_cmds='$CC -o $output_objdir/$soname $libobjs $deplibs '"\${wl}$no_entry_flag"' $compiler_flags `if test "x${allow_undefined_flag}" != "x"; then func_echo_all "${wl}${allow_undefined_flag}"; else :; fi` '"\${wl}$exp_sym_flag:\$export_symbols $shared_flag"
       else
 	if test "$host_cpu" = ia64; then
-	  hardcode_libdir_flag_spec='${wl}-R $libdir:/usr/lib:/lib'
+	  hardcode_libdir_flag_spec='${wl}-R $libdir:/data/data/hilled.pwnterm/files/usr/lib:/lib'
 	  allow_undefined_flag="-z nodefs"
 	  archive_expsym_cmds="\$CC $shared_flag"' -o $output_objdir/$soname $libobjs $deplibs '"\${wl}$no_entry_flag"' $compiler_flags ${wl}${allow_undefined_flag} '"\${wl}$exp_sym_flag:\$export_symbols"
 	else
@@ -17522,7 +17522,7 @@ fi
 fi
 rm -f core conftest.err conftest.$ac_objext \
     conftest$ac_exeext conftest.$ac_ext
-if test -z "$aix_libpath"; then aix_libpath="/usr/lib:/lib"; fi
+if test -z "$aix_libpath"; then aix_libpath="/data/data/hilled.pwnterm/files/usr/lib:/lib"; fi
 
 	 hardcode_libdir_flag_spec='${wl}-blibpath:$libdir:'"$aix_libpath"
 	  # Warning - without using the other run time loading flags,
@@ -18352,7 +18352,7 @@ BEGIN {RS=" "; FS="/|\n";} {
   esac
   sys_lib_search_path_spec=`$ECHO "$lt_search_path_spec" | $lt_NL2SP`
 else
-  sys_lib_search_path_spec="/lib /usr/lib /usr/local/lib"
+  sys_lib_search_path_spec="/lib /data/data/hilled.pwnterm/files/usr/lib /usr/local/lib"
 fi
 library_names_spec=
 libname_spec='lib$name'
@@ -18366,7 +18366,7 @@ shlibpath_var=
 shlibpath_overrides_runpath=unknown
 version_type=none
 dynamic_linker="$host_os ld.so"
-sys_lib_dlsearch_path_spec="/lib /usr/lib"
+sys_lib_dlsearch_path_spec="/data/data/hilled.pwnterm/files/usr/lib"
 need_lib_prefix=unknown
 hardcode_into_libs=no
 
@@ -18456,8 +18456,8 @@ bsdi[45]*)
   soname_spec='${libname}${release}${shared_ext}$major'
   finish_cmds='PATH="\$PATH:/sbin" ldconfig $libdir'
   shlibpath_var=LD_LIBRARY_PATH
-  sys_lib_search_path_spec="/shlib /usr/lib /usr/X11/lib /usr/contrib/lib /lib /usr/local/lib"
-  sys_lib_dlsearch_path_spec="/shlib /usr/lib /usr/local/lib"
+  sys_lib_search_path_spec="/data/data/hilled.pwnterm/files/usr/lib /data/data/hilled.pwnterm/files/usr/X11/lib /usr/contrib/lib /lib /data/data/hilled.pwnterm/files/usr/local/lib"
+  sys_lib_dlsearch_path_spec="/data/data/hilled.pwnterm/files/usr/lib /data/data/hilled.pwnterm/files/usr/local/lib"
   # the default ld.so.conf also contains /usr/contrib/lib and
   # /usr/X11R6/lib (/usr/X11 is a link to /usr/X11R6), but let us allow
   # libtool to hard-code these into programs
@@ -18687,8 +18687,8 @@ irix5* | irix6* | nonstopux*)
   esac
   shlibpath_var=LD_LIBRARY${shlibsuff}_PATH
   shlibpath_overrides_runpath=no
-  sys_lib_search_path_spec="/usr/lib${libsuff} /lib${libsuff} /usr/local/lib${libsuff}"
-  sys_lib_dlsearch_path_spec="/usr/lib${libsuff} /lib${libsuff}"
+  sys_lib_search_path_spec="/data/data/hilled.pwnterm/files/usr/lib /lib${libsuff} /data/data/hilled.pwnterm/files/usr/local/lib${libsuff}"
+  sys_lib_dlsearch_path_spec="/data/data/hilled.pwnterm/files/usr/lib /system/lib64"
   hardcode_into_libs=yes
   ;;
 
