@@ -22,10 +22,10 @@
 ```
 ./build.sh
 ```
-* Installing
+* Installing (Not recommended)
 
 ```
-./build.sh
+./build-install.sh
 ```
 
 #### Credits
