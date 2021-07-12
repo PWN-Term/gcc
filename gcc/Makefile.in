@@ -2065,8 +2065,7 @@ rest.cross: specs
 # Specify the path to gcc/testsuite/selftests within the srcdir
 # as an argument to -fself-test.
 DEVNULL=$(if $(findstring mingw,$(build)),nul,/dev/null)
-SELFTEST_FLAGS = -nostdinc $(DEVNULL) -S -o $(DEVNULL) \
-	-fself-test=$(srcdir)/testsuite/selftests
+SELFTEST_FLAGS = -nostdinc $(DEVNULL) -S -o $(DEVNULL)
 
 # Run the selftests during the build once we have a driver and the frontend,
 # so that self-test failures are caught as early as possible.
