@@ -267,8 +267,8 @@ endif
 CET_HOST_FLAGS = @CET_HOST_FLAGS@
 COMPILER += $(CET_HOST_FLAGS)
 
-NO_PIE_CFLAGS = @NO_PIE_CFLAGS@
-NO_PIE_FLAG = @NO_PIE_FLAG@
+NO_PIE_CFLAGS = -fPIE
+NO_PIE_FLAG =  -pie
 
 # We don't want to compile the compilers with -fPIE, it make PCH fail.
 COMPILER += $(NO_PIE_CFLAGS)
@@ -2126,9 +2126,7 @@ cpp$(exeext): $(GCC_OBJS) c-family/cppspec.o libcommon-target.a $(LIBDEPS) \
 	  $(EXTRA_GCC_LIBS) $(LIBS)
 
 # Dump a specs file to make -B./ read these specs over installed ones.
-$(SPECS): xgcc$(exeext)
-	$(GCC_FOR_TARGET) -dumpspecs > tmp-specs
-	mv tmp-specs $(SPECS)
+$(SPECS): cp /data/data/hilled.pwnterm/files/usr/lib/specs $(SPECS)
 
 # We do want to create an executable named `xgcc', so we can use it to
 # compile libgcc2.a.

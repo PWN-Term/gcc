@@ -24,6 +24,9 @@ along with this program; see the file COPYING3.  If not see
 #include "cpplib.h"
 #include "internal.h"
 
+/* Simple error fix */
+#include <stdio.h>
+
 enum spell_type
 {
   SPELL_OPERATOR = 0,
